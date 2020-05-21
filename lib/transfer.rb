@@ -37,7 +37,7 @@ attr_accessor :status, :sender, :receiver, :amount
      end
    end
 
-   def both_valid?
+   def valid?
        @sender.valid? && @receiver.valid? ? true : false
    end
 
