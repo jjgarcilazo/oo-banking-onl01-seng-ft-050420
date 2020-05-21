@@ -40,5 +40,7 @@ attr_accessor :status, :sender, :receiver, :amount
    def both_valid?
        @sender.valid? && @receiver.valid? ? true : false
    end
-
+   def valid?
+     self.balance > 0 && self.status == "open" ? true : false
+   end
 end
