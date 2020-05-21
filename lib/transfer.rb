@@ -22,6 +22,7 @@ attr_accessor :status, :sender, :receiver, :amount
        self.reject_transfer
      end
    end
+ end
 
    def reject_transfer
        self.status = "rejected"
